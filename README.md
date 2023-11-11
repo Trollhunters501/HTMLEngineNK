@@ -9,3 +9,8 @@ Create simple Nukkit plugins written in HTML5!
 if you try to run JavaScript use: [JSEngineNK](https://cloudburstmc.org/resources/jsenginenk.939/) !
 
 # How to use?
+- Create html archive, example: test.html
+- Drop archive in plugins/HTMLEngineNK/test.html
+- Create your code!
+- Start your server! Instantly run
+- All the information here! Wiki
