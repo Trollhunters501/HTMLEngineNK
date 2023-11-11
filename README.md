@@ -13,4 +13,4 @@ if you try to run JavaScript use: [JSEngineNK](https://cloudburstmc.org/resource
 - Drop archive in plugins/HTMLEngineNK/test.html
 - Create your code!
 - Start your server! Instantly run
-- All the information here! Wiki
+- All the information how to use Html in Nukkit, and much more  [here! Wiki](https://github.com/Trollhunters501/HTMLEngineNK/wiki)
