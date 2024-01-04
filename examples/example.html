@@ -38,8 +38,8 @@
     </div>
     <!--Configs:-->
     <tag type="global" name="config"><manager func json="createConfig"><manager func json="getFile"><textarea>test</textarea>, <textarea>config.yml</textarea></manager>, 2</manager></tag>
-    <config func json="set"><textarea>test</textarea>, true</config>
-    <config func json="save"/>
+    <config json="set"/><calldiv><textarea>test</textarea>, true</calldiv><endline/>
+    <config json="save"/><calldiv></calldiv><endline/>
     <!--Events:-->
     <div event="Enable">
       <p>Hello World!</p>
@@ -50,7 +50,7 @@
     <!--the events it currently supports They are the same as JSEngineNK v1.9-->
 
     <!--Tasks: time in ticks-->
-    <manager func json="createTask"><textarea>tasknormal</textarea>, 20</manager>
+    <manager func json="createTask"><textarea>tasknormal</textarea>, 20</manager><endline/>
     <div id="tasknormal" task>
       <p>sou tasknormal!</p>
     </div>
