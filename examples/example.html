@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <!--Here goes the head tag to register the plugin -->
+  <head>
+    <!--The title tag to register the title (required)-->
+    <title>Test html</title>
+    <!--A meta tag with version attr in addition to other required attrs-->
+    <meta version="1.0.0"/>
+    <!--Description -->
+    <meta description="An example plugin!"/>
+    <!--Author-->
+    <meta author="Creadores Program"/>
+    <!--This tag is optional from the website!-->
+    <link website="https://test.com/"/>
+  </head>
+  
+  <!--The bodysuit begins-->
+  <body>
+    
+    <!--Use Java Packages:-->
+    <tag type="global" name="playertest"><java>cn.nukkit.Player</java></tag>
+    <!--The Player file you can see the Nukkit API in their official documentation on how to use the files!-->
+    <tag type="global" name="IOExeptionTest"><java>java.io.IOException</java></tag>
+    <!--java vanila-->
+    <tag type="global" name="ContentTypeTest"><java packages>org.apache.http.entity.ContentType</java></tag>
+    <!--Java packages that are not in Nukkit or Java Vanila (Necessary to install)-->
+    <!--remember to call with json and func-->
+
+    <!--Commands:-->
+    <manager func json="createCommand"><textarea>name</textarea>, <textarea>description</textarea>, <textarea>divUsed</textarea></manager><endline/>
+    <div command id="divUsed">
+      <if cond="args.length < 1">
+        <p>Você digitou incorretamente</p>
+        <return/>
+      </if>
+      <tag name="name" type="local"><args/><map>0</map></tag>
+      <p>Você digitou: <include><name/></include></p>
+    </div>
+    <!--Configs:-->
+    <tag type="global" name="config"><manager func json="createConfig"><manager func json="getFile"><textarea>test</textarea>, <textarea>config.yml</textarea></manager>, 2</manager></tag>
+    <config func json="set"><textarea>test</textarea>, true</config>
+    <config func json="save"/>
+    <!--Events:-->
+    <div event="Enable">
+      <p>Hello World!</p>
+    </div>
+    <div event="ItemFrameDropItemEvent">
+      <p>oki</p>
+    </div>
+    <!--the events it currently supports They are the same as JSEngineNK v1.9-->
+
+    <!--Tasks: time in ticks-->
+    <manager func json="createTask"><textarea>tasknormal</textarea>, 20</manager>
+    <div id="tasknormal" task>
+      <p>sou tasknormal!</p>
+    </div>
+    <!--you can see the manager by JSEngineNK to see more features https://github.com/Trollhunters501/JSEngineNK/blob/master/examples/example.js-->
+  </body>
+</html>
